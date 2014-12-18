@@ -5,6 +5,13 @@
   "author": "Eric Hynds <ehynds@gmail.com>",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ehynds/chord-parser"
+  },
+  "bugs": {
+    "url": "https://github.com/ehynds/chord-parser/issues"
+  },
   "keywords": [
     "guitar",
     "guitar tabs",
