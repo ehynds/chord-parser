@@ -1,0 +1,137 @@
+{ "total":78, "unique":17 }
+-----------------------------------------------------------------------------
+                 Angel - Dave Matthews Band
+-----------------------------------------------------------------------------
+Tabbed by: Kotie A.
+Email: LastRockShow@hotmail.com
+
+Tuning: Tune down 1/2 step (Eb, Ab, Db, Gb, Bb, Eb)
+
+I love this song, the band itself. I thought I'd try tabbing this. Another thing,
+Dave uses different picking, he doesn't just do a plain chord, so it will sound
+different.
+
+Intro:
+------------------------------------------
+C  F  C  F
+
+Verse:
+------------------------------------------
+C
+     I call you up
+F
+     You pick up
+C
+     You call my bluff
+F
+     On the cards of love
+C
+     You hold to close
+F
+     Your hands to your chest
+C
+     I can't read you eyes
+F
+     But I confess
+G
+     It's lonely far
+F
+     From you
+C
+     Even when you're right by me
+G
+     It's only why
+F
+     I wait for you
+C                 F     C/E
+     To take my ha - nd
+
+Chorus:
+------------------------------------------
+D                        Em7   D/F#        Gm
+     Why do I beg like a child for you can - dy?
+D                        Em7        D/F#      Gm
+     Why do I come after you like I do? I love  you
+Gm         Dm/F
+     Whate'er you are
+E7            Gm/Bb       Gm/F   F
+     I swear, you'll be my an - gel, you
+
+Verse:
+------------------------------------------
+C
+     I play my cards
+F
+     Best I can
+C
+     But I lose my luck
+F
+     When you're not here
+C
+     My darling heart
+F
+     Won't you please give in?
+C
+     I may be strong
+F
+     But I want you back again
+G
+     When you're not here
+F
+     Oh, it's hard to pretend
+C
+     It's all alright....again
+G
+     When you're not here
+F
+     Love, it's hard to pretend
+C                   F     C/E
+     It's all alright.....still
+
+~Back To Chorus~
+
+Verse:
+------------------------------------------
+C
+     Watch the deck
+F
+     And count your cards
+C
+     Makes no sense
+F
+     That I'm always losing
+C
+     .....
+F
+     When you're gone
+C
+     .....
+F
+     .....
+
+~Back To Chorus~
+
+Outro:
+------------------------------------------
+C
+     .....
+F
+     When you're gone
+C
+     .....
+F
+     .....
+
+
+
+THERE IT IS! Remember you must tune down a half step for this version to work!
+(There might be a version where you don't have to but this is just easier and
+it's how he played it) Chords below!
+
+    C    F    G   C/E   D   Em7   D/F#   Gm   Gm/Bb   Gm/F
+eb|-0----1----3----3----2----3------------3-----3------3----|
+Bb|-1----1----0----1----3----3-----3------3-----3------3----|
+Gb|-0----2----0----0----2----0-----2------3-----0------3----|
+Db|-2----4----0----2----0----2-----0------5-----x------3----|
+Ab|-3----4----x--------------------x------5-----1-----------|
+Eb|------1----3--------------------2------3-----------------|

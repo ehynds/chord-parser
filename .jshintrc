@@ -1,0 +1,17 @@
+{
+  "browser": true,
+  "node": true,
+  "esnext": true,
+  "bitwise": true,
+  "eqeqeq": true,
+  "eqnull": true,
+  "forin": true,
+  "latedef": true,
+  "nonbsp": true,
+  "nonew": true,
+  "undef": true,
+  "immed": true,
+  "newcap": true,
+  "quotmark": "single",
+  "predef": ["define", "describe", "it"]
+}

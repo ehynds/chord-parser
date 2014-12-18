@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sample tab viewer</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        font-size:  14px;
+        padding: 0 10px;
+      }
+
+      form {
+        margin: 20px 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      pre {
+        padding: 10px;
+        background: #f1f1f1;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+      }
+
+      pre span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label>Select file:</label>
+
+      <select name="file">
+        <option value="all.txt">all.txt</option>
+        <option value="all-mangled.txt">all-mangled.txt</option>
+        <option value="dave-matthews_angel.txt">dave-matthews_angel.txt</option>
+        <option value="elvis-costello_alison.txt">elvis-costello_alison.txt</option>
+        <option value="everlast_what-its-like.txt">everlast_what-its-like.txt</option>
+        <option value="eric-clapton_layla.txt">eric-clapton_layla.txt</option>
+        <option value="eric-clapton_running-on-faith.txt">eric-clapton_running-on-faith.txt</option>
+        <option value="metallica_one.txt">metallica_one.txt</option>
+        <option value="billy-joel_piano-man.txt">billy-joel_piano-man.txt</option>
+        <option value="billy-joel_new-york-state-of-mind.txt">billy-joel_new-york-state-of-mind.txt</option>
+        <option value="extreme_more-than-words.txt">extreme_more-than-words.txt</option>
+        <option value="jimi-hendrix_purple-haze.txt">jimi-hendrix_purple-haze.txt</option>
+      </select>
+
+      <input type="button" value="Run">
+    </form>
+
+    <p><span id="total">0</span> total chords</p>
+    <p><span id="unique">0</span> unique chords</p>
+    <pre>Select a tab...</pre>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../index.js"></script>
+    <script>
+      var $select = $('select');
+      var $target = $('pre');
+      var $form = $('form');
+      var $run = $('input[type="button"]');
+      var $total = $('#total');
+      var $unique = $('#unique');
+
+      // Load file into the pre tag when the form is submitted
+      $form.on('submit', function(event) {
+        event.preventDefault();
+
+        $.get('samples/' + $select.val()).then(function(contents) {
+          $target.html(contents.replace(/{.*}\n/, ''));
+          $total.add($unique).text(0);
+        });
+      });
+
+      // Submit the form when the select box changes and when the page loads
+      $select.on('change', function() {
+        $form.submit();
+      }).triggerHandler('change');
+
+      // Run ChordParser when the 'Run' button is clicked on
+      $run.on('click', function() {
+        var parser = new ChordParser($target.html());
+
+        $target.html(function() {
+          return parser.wrap(function(chord) {
+            return '<span>' + chord + '</span>';
+          });
+        });
+
+        $total.text(parser.all().length);
+        $unique.text(parser.unique().length);
+      });
+    </script>
+  </body>
+</html>
