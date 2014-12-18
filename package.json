@@ -1,6 +1,6 @@
 {
   "name": "chord-parser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Parse guitar chords contained within a string of tablature",
   "author": "Eric Hynds <ehynds@gmail.com>",
   "main": "index.js",

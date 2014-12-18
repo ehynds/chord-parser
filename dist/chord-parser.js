@@ -1,4 +1,4 @@
-/* v0.1.0 - Thu Dec 18 2014 08:45:51 */
+/* v0.1.1 - Thu Dec 18 2014 08:51:47 */
 (function(name, context, definition) {
   if (typeof module !== 'undefined' && module.exports) module.exports = definition();
   else if (typeof define === 'function' && define.amd) define(definition);
@@ -53,7 +53,7 @@
    */
   function ChordParser(input) {
     if(typeof input !== 'string') {
-      throw new Error('ChordParser must be involved with a string');
+      throw new Error('ChordParser must be invoked with a string');
     }
     if(!(this instanceof ChordParser)) {
       return new ChordParser(input);
