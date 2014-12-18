@@ -52,7 +52,7 @@
    */
   function ChordParser(input) {
     if(typeof input !== 'string') {
-      throw new Error('ChordParser must be involved with a string');
+      throw new Error('ChordParser must be invoked with a string');
     }
     if(!(this instanceof ChordParser)) {
       return new ChordParser(input);
